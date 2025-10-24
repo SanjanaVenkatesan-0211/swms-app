@@ -1,0 +1,110 @@
+/* src/pages/DriverDashboard.css - green-accented driver UI */
+
+.driver-root {
+  max-width: 1100px;
+  margin: 24px auto;
+  padding: 14px;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+  color: #08291a;
+}
+
+.driver-header {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom: 16px;
+}
+.driver-header h2 {
+  margin:0;
+  color:#14532d;
+  font-size:22px;
+}
+.driver-sub { color:#14532d; opacity:0.9; font-size:14px; }
+
+.driver-content { display:block; }
+
+/* Card */
+.driver-card {
+  background: linear-gradient(180deg, #ffffff, #f7fff7);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 8px 22px rgba(16, 24, 40, 0.06);
+}
+
+/* title */
+.card-title {
+  margin: 0 0 12px 0;
+  color: #0b3b2e;
+  font-size:18px;
+}
+
+/* Empty state */
+.empty {
+  padding: 24px;
+  color: #5b8a6b;
+}
+
+/* Table wrapper (responsive) */
+.table-wrap {
+  overflow-x: auto;
+}
+
+/* Table */
+.driver-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+.driver-table th, .driver-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #eef7ee;
+  text-align: left;
+}
+.driver-table thead th {
+  color:#14532d;
+  font-weight:700;
+  background:transparent;
+}
+.driver-table tr:hover td { background:#fbfffb; }
+
+/* mono style for IDs */
+.mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace; }
+
+/* Status badges */
+.status-badge {
+  display:inline-block;
+  padding:6px 10px;
+  border-radius:999px;
+  font-weight:700;
+  text-transform:capitalize;
+  font-size:13px;
+}
+.status-badge.pending { background:#fff7ed; color:#b45309; }
+.status-badge.completed { background:#ecfdf5; color:#065f46; }
+
+/* Buttons */
+.btn {
+  padding:8px 12px;
+  border-radius:8px;
+  font-weight:700;
+  cursor:pointer;
+  border: none;
+}
+.btn-complete {
+  background: linear-gradient(90deg, #16a34a, #059669);
+  color: #fff;
+}
+.btn-complete:hover { transform: translateY(-2px); }
+
+.btn-disabled {
+  background: #e6f4ea;
+  color: #4b6b57;
+  cursor: default;
+}
+
+/* Responsive tweaks */
+@media (max-width: 720px) {
+  .driver-header { text-align: left; }
+  .driver-table th:nth-child(3), .driver-table td:nth-child(3) { display:none; } /* hide route on small screens */
+  .driver-table th:nth-child(5), .driver-table td:nth-child(5) { text-align:center; }
+}

@@ -1,0 +1,69 @@
+/* Overall dashboard styling */
+.manager-dashboard {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Header */
+.dashboard-header {
+  margin-bottom: 30px;
+}
+
+.dashboard-header h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Sections */
+.dashboard-section {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.dashboard-section h2 {
+  margin-bottom: 15px;
+  color: #444;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 5px;
+}
+
+/* Table container for scroll */
+.table-container {
+  overflow-x: auto;
+}
+
+/* Tables */
+.dashboard-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.dashboard-table th,
+.dashboard-table td {
+  text-align: left;
+  padding: 12px 15px;
+}
+
+.dashboard-table thead {
+  background-color: #11a004;
+  color: #fff;
+}
+
+.dashboard-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.dashboard-table tbody tr:hover {
+  background-color: #e6f0ff;
+}
+
+/* Empty messages */
+.empty-message {
+  color: #666;
+  font-style: italic;
+}

@@ -13,7 +13,7 @@ export default function Home() {
       <header className="home-header">
         <div className="brand">Smart Waste Management System</div>
         <nav className="home-nav">
-          <a href="/" className="nav-link">Home</a>
+          <a href="/" className="nav-link">Homeeeeeeeeeeeeeeeeee</a>
           <a href="/login" className="nav-link">Login</a>
           <a href="/register" className="nav-link">Register</a>
         </nav>
